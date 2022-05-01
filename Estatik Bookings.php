@@ -156,8 +156,8 @@ add_action( 'init', 'booking_register_taxonomy' );
 
 
 function booking_styles() {
-    wp_enqueue_style( 'booking',  plugin_dir_url( __FILE__ ) . ‘/css/booking-style.css’ );                      
+    wp_enqueue_style( 'booking',  plugin_dir_url( __FILE__ ) . '/css/booking-style.css' );                      
 }
-add_action( 'wp_enqueue_scripts', booking_styles' );
+add_action( 'wp_enqueue_scripts', 'booking_styles' );
 
 
